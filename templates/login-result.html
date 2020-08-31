@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <p>Access token:</p>
+        <p id="access_token"></p>
+        <p><button id="LogoutButton">LOT OUT</button></p>
+    </body>
+</html>
+
+<script>
+    window.onload = 
+    function loadAccessToken() {
+        const fragment = window.location.hash.substr(1).split('&')[0].split('=');
+        // check if the fragment includes the access token
+        if ( fragment[0] === 'access_token' ) {
+            document.getElementById("access_token").innerText = fragment[1];
+        }
+        console.log(fragment)
+        console.log("Address: " + window.location.host)
+    }
+
+    document.getElementById("LogoutButton").addEventListener("click", clickLogout);  
+    function clickLogout() {
+        window.localStorage.clear()
+
+        fetch("/api/logout").then(response => {
+            console.log(response)
+            window.location.href = "/login";
+        })
+    }
+
+</script>
