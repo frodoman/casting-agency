@@ -16,7 +16,7 @@ with one of the login email:
     - casting-director@gmail.com (Manager)
     - executive-producer@gmail.com (Admin)
 
-Password will be provied seperately. 
+Password is: c8stingAg3ncy*
 
 After login successfully via Auth0, an access token (JWT token) will be presented, please make a copy of it as you may need it for unit testing. 
 
