@@ -10,8 +10,7 @@ The Casting Agency models a company that is responsible for creating movies and 
 
 * To login, go to https://casting-agency-xhl.herokuapp.com/login
 
-
-with one of the login email: 
+* with one of the login email: 
     - casting-assistant@gmail.com (User)
     - casting-director@gmail.com (Manager)
     - executive-producer@gmail.com (Admin)
@@ -37,7 +36,7 @@ export FLASK_DEBUG=True
 flask run
 ```
 
-Please be sure the host url is [http://127.0.0.1:5000/](http://127.0.0.1:5000/) otherwise the call back will fail from Auth0.
+Please be sure the host url is http://127.0.0.1:5000/, otherwise the call back will fail from Auth0.
 
 
 ## Roles-based access control (RBAC)
@@ -68,7 +67,7 @@ python test_movies.py
 ```
 
 If the JWT tokens in `test_commons.py` are expired, some tests will fail. 
-To renew JWT tokens, please start a new private window with a web browser, go to https://casting-agency-xhl.herokuapp.com/login[https://casting-agency-xhl.herokuapp.com/login] and login with one of the provied emails, then make a copy of the JWT tokens and replace the existing values in `test_commons.py`:
+To renew JWT tokens, please start a new private window with a web browser, go to https://casting-agency-xhl.herokuapp.com/login and login with one of the provied emails, then make a copy of the JWT tokens and replace the existing values in `test_commons.py`:
 
 * Login with `executive-producer@gmail.com` then replace `JWT_TOKEN_ADMIN` with the new JWT token
 * Login with `casting-director@gmail.com` then replace `JWT_TOKEN_MANAGER` with the new JWT token
@@ -78,7 +77,8 @@ To renew JWT tokens, please start a new private window with a web browser, go to
 # Casting Agency API Reference 
 
 ## Getting Started
-* Base URL: Currently this app can run locally and from Heroku. The backend is host locally at the default url: [http://127.0.0.1:5000/](http://127.0.0.1:5000/), and in Heroku https://casting-agency-xhl.herokuapp.com[https://casting-agency-xhl.herokuapp.com]
+* Base URL: Currently this app can run locally and from Heroku. The backend is host locally at the default url: http://127.0.0.1:5000/, and in Heroku https://casting-agency-xhl.herokuapp.com
+
 * Authentication: required for most of the endpoint within the request header's 'Authentication' key. Format: 
 ```
 {
