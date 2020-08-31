@@ -6,9 +6,9 @@ The Casting Agency models a company that is responsible for creating movies and 
 
 ## Accessing the live app 
 
-* This app is host in https://casting-agency-xhl.herokuapp.com[https://casting-agency-xhl.herokuapp.com]
+* This app is host in https://casting-agency-xhl.herokuapp.com
 
-* To login, go to https://casting-agency-xhl.herokuapp.com/login[https://casting-agency-xhl.herokuapp.com/login]
+* To login, go to https://casting-agency-xhl.herokuapp.com/login
 
 
 with one of the login email: 
